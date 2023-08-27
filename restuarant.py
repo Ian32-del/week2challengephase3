@@ -19,6 +19,12 @@ class Restaurant :
             unique_customers.add(review.customer())
         return list (unique_customers)
     
+    def average_star_rating(self):
+        if not self.reviews:
+            return 0
+        total_rating = sum(review.rating() for review in self.reviews)
+        return total_rating / len(self.reviews)
+    
 restaurant = Restaurant("Delicious Eats")
 review1 = Review("Jane", restaurant, 4)
 review2 = Review("John", restaurant, 5)
