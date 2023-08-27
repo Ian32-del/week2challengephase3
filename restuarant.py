@@ -7,3 +7,6 @@ class Restuarant :
     
 recipe = Restuarant("Eat Here")
 print(recipe.name())
+
+cook = Restuarant("Best Food Here")
+print(cook.name())
