@@ -10,13 +10,19 @@ class Review :
     def rating(self):
         return self.rating
     
+    def customer(self):
+        return self.customer
+    
+    def retaurant(self):
+        return self.retaurant
+    
     @classmethod
     def all (cls):
         return cls.all_reviews
     
-name = Review("Jane","All You Can Eat",8)
+# name = Review("Jane","All You Can Eat",8)
 
-all_reviews = Review.all()
+# all_reviews = Review.all()
 
-for review in all_reviews:
-    print(f"Customer:{review.customer}, Restaurant:{review.restaurant} ,Rating:{review.rating}")
+# for review in all_reviews:
+#     print(f"Customer:{review.customer}, Restaurant:{review.restaurant} ,Rating:{review.rating}")

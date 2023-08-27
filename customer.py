@@ -5,6 +5,7 @@ class Customer :
         self.given_name = given_name
         self.family_name = family_name
         Customer.all_customers.append(self) 
+        self.reviews = []
 
     def change_given_name (self , new_given_name):
         self.given_name = new_given_name
@@ -25,6 +26,10 @@ class Customer :
     def all(cls):
 
         return cls.all_customers
+    
+    def restaurants(self):
+        reviewed_restaurants = set()
+        for review in self 
     
 customer1 = Customer("George", "Washington")
 
